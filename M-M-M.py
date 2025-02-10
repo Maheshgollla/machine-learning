@@ -1,7 +1,18 @@
 import numpy
 from scipy import stats
-x=[99,86,87,88,111,86,103,87,94,78,77,85,86]
-y=numpy.mean(x)
-z=numpy.median(x)
-v=stats.mode(x)
-print(y,z,v)
+def avg(x):
+    return numpy.mean(x)
+def med(Y):
+    return numpy.median(Y)
+def mod(z):
+    return stats.mode(z)
+if __name__=="__main__":
+    arr=[]
+    n=int(input('enter array size: '))
+    for i in range(n):
+        a=int(input(f"Enter element number {i}: "))
+        arr.append(a)
+    print(arr)
+    print(avg(arr),med(arr),mod(arr))
+    
+           
