@@ -8,4 +8,4 @@ if __name__=="__main__":
     rge =int(input("Enter range: "))
     arr=numpy.random.uniform(lwr,upr,rge)
     plt.hist(arr,10)
-    plt.show()      ~
+    plt.show()    
